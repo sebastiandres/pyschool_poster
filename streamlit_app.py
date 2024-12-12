@@ -2,15 +2,15 @@
 
 import streamlit as st
 
-st.set_page_config(page_title="PySchool", page_icon=":school:")
+st.set_page_config(page_title="PySchool", page_icon="images/pyschool.png")
 
 options = ["English", "Español"]
 language_sel = st.segmented_control("Language", options, selection_mode="single", label_visibility="hidden", default=options[0])
 
 # All the text definitions
 title_dict = {
-    "English": ["PySchool", "Breaking barriers to education"],
-    "Español": ["PySchool", "Rompiendo barreras a la educación"]
+    "English": ["PySchool", "How can we bring Python programming to high school students?"],
+    "Español": ["PySchool", "¿Cómo podemos acercar programación con Python a estudiantes de colegios?"]
 }
 authors_dict = {
     "English": "Authors",
