@@ -5,17 +5,17 @@ from data import content_dict, button_dict
 test_items = [
     dict(
         title="PySchool",
-        text="PySchool - X/Y/Z 00",
+        text="",
         img="carousel/pyschool_00.jpg",
     ),
     dict(
         title="PySchool",
-        text="PySchool - X/Y/Z 01",
+        text="",
         img="carousel/pyschool_01.jpg",
     ),
     dict(
         title="PySchool",
-        text="PySchool - X/Y/Z 02",
+        text="",
         img="carousel/pyschool_02.jpg",
     ),
 ]
