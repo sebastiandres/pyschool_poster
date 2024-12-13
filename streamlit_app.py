@@ -1,4 +1,6 @@
 # Streamlit app that displays the info of PySchool
+# Light Blue: #29a6f8
+# Dark Blue: #06578e
 
 import streamlit as st
 
@@ -9,8 +11,8 @@ language_sel = st.segmented_control("Language", options, selection_mode="single"
 
 # All the text definitions
 title_dict = {
-    "English": ["PySchool", "How can we bring Python programming to high school students?"],
-    "Español": ["PySchool", "¿Cómo podemos acercar programación con Python a estudiantes de colegios?"]
+    "English": ["PySchool", "Bringing Python programming to high school students?"],
+    "Español": ["PySchool", "Acercando la programación con Python a estudiantes de colegios"]
 }
 authors_dict = {
     "English": "Authors",
@@ -59,19 +61,25 @@ def loremipsum():
     st.write("Lorem Ipsum")
 
 #-----------------------------------------------------------------------------#
+button_properties = {
+    "use_container_width": True,
+    "type": "primary"
+}
+
 title, subtitle = title_dict[language_sel]
 st.title(title)
 st.caption(subtitle)
-if st.button(authors_dict[language_sel], use_container_width=True):
+if st.button(authors_dict[language_sel], **button_properties):
     authors()
-if st.button("Acknowledgement", use_container_width=True):
+if st.button("Acknowledgement", **button_properties):
     loremipsum()
-if st.button(about_title_dict[language_sel], use_container_width=True):
+if st.button(about_title_dict[language_sel], **button_properties):
     about()
-if st.button("Tech Stack", use_container_width=True):
+if st.button("Tech Stack", **button_properties):
     loremipsum()
-if st.button("Replicate the initiative", use_container_width=True):
+if st.button("Replicate the initiative", **button_properties):
     loremipsum()
-if st.button(references_title_dict[language_sel], use_container_width=True):
+if st.button(references_title_dict[language_sel], **button_properties):
     references()
-st.image("images/pyschool.png")
+_, c, _ = st.columns([1, 1, 1])
+c.image("images/pyschool.png")

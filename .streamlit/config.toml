@@ -1,0 +1,8 @@
+[theme]
+base="light"
+#textColor="white"
+#primaryColor="#06578e"
+#backgroundColor="#29a6f8"
+textColor="#06578"
+primaryColor="#29a6f8"
+backgroundColor="white"
