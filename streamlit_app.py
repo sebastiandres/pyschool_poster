@@ -3,83 +3,40 @@
 # Dark Blue: #06578e
 
 import streamlit as st
+from data import content_dict, button_dict
 
 st.set_page_config(page_title="PySchool", page_icon="images/pyschool.png")
 
+# Select the language
+ic, tc = st.columns([1, 3])
+ic.image("images/pyschool.png")
 options = ["English", "Español"]
-language_sel = st.segmented_control("Language", options, selection_mode="single", label_visibility="hidden", default=options[0])
+st.session_state["lang"] = tc.segmented_control("Language", options, selection_mode="single", default=options[0], label_visibility="hidden")
+tc.markdown("## PySchool")
+tc.caption(content_dict["subtitle"][st.session_state["lang"]])
+lang = st.session_state["lang"]
 
-# All the text definitions
-title_dict = {
-    "English": ["PySchool", "Bringing Python programming to high school students?"],
-    "Español": ["PySchool", "Acercando la programación con Python a estudiantes de colegios"]
-}
-authors_dict = {
-    "English": "Authors",
-    "Español": "Autores"
-}
-about_title_dict = {
-    "English": "About",
-    "Español": "Acerca de"
-}
-about_dict = {
-    "English": "PySchool is a school that teaches Python programming language to students.",
-    "Español": "PySchool es una escuela que enseña el lenguaje de programación Python a estudiantes."
-}
-references_title_dict = {
-    "English": "References",
-    "Español": "Referencias"
-}
+# Create a callback function for the button
+def button_callback(keyword):
+    lang = st.session_state["lang"]
+    st.session_state["title"] = button_dict[keyword][lang]
+    st.session_state["content"] = content_dict[keyword][lang]
 
-# Define the authors modal
-@st.dialog(authors_dict[language_sel], width="large")
-def authors():
-    col1, col2 = st.columns(2)
-    col1.page_link(page="https://www.linkedin.com/in/sebastiandres/", label="Sebastian Flores", icon=None, use_container_width=True)
-    col2.page_link(page="https://www.linkedin.com/in/faam/", label="Francisco Alfaro", icon=None, use_container_width=True)
+# A generic modal
+@st.dialog(title="PySchool", width="large")
+def dynamic_dialog():
+    st.subheader(st.session_state["title"])
+    st.markdown(st.session_state["content"])
 
-# Define the about modal
-@st.dialog(about_title_dict[language_sel], width="large")
-def about():
-    st.write(about_dict[language_sel])
+# Display the buttons
+button_properties = { "use_container_width": True, "type": "primary" }
+for keyword in button_dict.keys():
+    if st.button(button_dict[keyword][lang], on_click=button_callback, args=[keyword], **button_properties):
+        dynamic_dialog()
 
-# Define the references modal
-@st.dialog(references_title_dict[language_sel], width="large")
-def references():
-    mkd = """
-    * Repo: https://github.com/python-chile/pyschool2024/ 
-    * Website: https://pyschool.cl/ 
-    * https://www.linkedin.com/posts/pythonchiledev_pyschool-python-educaci%C3%B3n-activity-7234401423780696064-W-vt/?originalSubdomain=es 
-    * https://www.instagram.com/admisionduocuc_vregion/p/C_lLWF8JS9J/?img_index=1 
-    * https://pythonchile.cl/pyschool-en-valparaiso-inspirando-a-la-proxima-generacion-de-programadores-python.html 
-    """
-    st.write(mkd)
+# Images: Python Chile and Duoc Valparaiso
+_, c1, _, c2, _ = st.columns([1, 2, 1, 2, 1])
+c1.image("images/pythonchile.png")
+c2.image("images/duoc_valparaiso.png")
 
-# Lorem Ipsum
-@st.dialog("Lorem Ipsum", width="large")
-def loremipsum():
-    st.write("Lorem Ipsum")
 
-#-----------------------------------------------------------------------------#
-button_properties = {
-    "use_container_width": True,
-    "type": "primary"
-}
-
-title, subtitle = title_dict[language_sel]
-st.title(title)
-st.caption(subtitle)
-if st.button(authors_dict[language_sel], **button_properties):
-    authors()
-if st.button("Acknowledgement", **button_properties):
-    loremipsum()
-if st.button(about_title_dict[language_sel], **button_properties):
-    about()
-if st.button("Tech Stack", **button_properties):
-    loremipsum()
-if st.button("Replicate the initiative", **button_properties):
-    loremipsum()
-if st.button(references_title_dict[language_sel], **button_properties):
-    references()
-_, c, _ = st.columns([1, 1, 1])
-c.image("images/pyschool.png")
