@@ -29,13 +29,13 @@ team_button_dict = {
 }
 # Tech Stack
 tech_stack_button_dict = {
-    "English": "The tech stack",
+    "English": "Tech stack",
     "Español": "Tecnologías utilizadas"
 }
 # Replicate
 replicate_button_dict = {
-    "English": "How to replicate the initiative",
-    "Español": "¿Cómo replicar la iniciativa?"
+    "English": "How to replicate",
+    "Español": "¿Cómo replicar?"
 }
 # Photos
 photos_button_dict = {
@@ -49,8 +49,8 @@ links_button_dict = {
 }
 # Acknowledgement
 acknowledgement_button_dict = {
-    "English": "The acknowledgement",
-    "Español": "El agradecimiento"
+    "English": "Acknowledgements",
+    "Español": "Agradecimientos"
 }
 # Pack all buttons
 button_dict = {
@@ -71,8 +71,8 @@ button_dict = {
 #-----------------------------------------------------------------------------#
 
 subtitle_dict = {
-    "English": "Bringing Python programming to high school students?",
-    "Español": "Acercando la programación con Python a estudiantes de colegios",
+    "English": "Bringing Python programming to high school students",
+    "Español": "Acercando la programación con Python a estudiantes de secundaria",
 }
 
 #-----------------------------------------------------------------------------#
@@ -81,17 +81,17 @@ subtitle_dict = {
 
 problem_dict = {
     "English": """
-Python Chile did not have events targeting high school students. 
-Current events organized by Python Chile (PyCon, PyDay) were aimed at adults, including university students, developers, and professionals. 
-However, there is a growing need to foster programming and computational thinking skills among high school students. 
+We realized that Python Chile did not have events targeting high school students.   
+Current events organized by Python Chile (PyCon, PyDay) were aimed at adults, including university students, developers, and professionals.  
+However, there is a growing need to foster programming and computational thinking skills among high school students.  
 PySchool seeks to address this gap by offering an accessible and engaging space for students to begin learning Python.
 """,
     "Español": """
-Python Chile no tenía eventos dirigidos a estudiantes de secundaria. 
-Los eventos actuales organizados por Python Chile (PyCon, PyDay) eran para adultos, incluyendo estudiantes universitarios, desarrolladores y profesionales. 
-Sin embargo, hay una creciente necesidad de fomentar habilidades de programación y pensamiento computacional entre estudiantes de secundaria. 
-PySchool busca abordar este vacío ofreciendo un espacio accesible y atractivo para que los estudiantes comiencen a aprender Python.
-"""
+Nos dimos cuenta de un gran problema: Python Chile no tenía eventos dirigidos a estudiantes de secundaria.  
+Los eventos actuales organizados por Python Chile (PyCon, PyDay) eran para adultos, incluyendo estudiantes universitarios, desarrolladores y profesionales.  
+Sin embargo, hay una creciente necesidad de fomentar habilidades de programación y pensamiento computacional entre estudiantes de secundaria.  
+PySchool busca abordar este vacío ofreciendo un espacio accesible y atractivo para que los estudiantes comiencen a aprender Python.  
+""",
 }
 
 events_dict = {
@@ -102,57 +102,49 @@ ON X, we had Y students.
     "Español": """
 Durante 2024, con el apoyo de Python Chile, Python Software Foundation y DUOC UC, desarrollamos el contenido y el sitio, y realizamos 3 eventos de PySchool. 
 En X, tuvimos Y estudiantes.
-"""
+""",
 }
 
 objective_dict = {
     "English": """
-The main goal of PySchool is to democratize access to programming and computational thinking for high school students, sparking their interest in STEM (science, technology, engineering, and mathematics) through an inclusive and hands-on educational experience. 
+The main goal of PySchool is to democratize access to programming and computational thinking for high school students, sparking their interest in STEM (science, technology, engineering, and mathematics) through an inclusive and hands-on educational experience.  
 It aims to show students that learning a programming language is not as difficult as they might think and that they have the potential to pursue a STEM career.
 """,
     "Español": """
-El objetivo principal de PySchool es democratizar el acceso a la programación y el pensamiento computacional entre estudiantes de secundaria, fomentando su interés en STEM (ciencias, tecnología, ingeniería y matemáticas) a través de una experiencia educativa inclusiva y práctica. 
+El objetivo principal de PySchool es democratizar el acceso a la programación y el pensamiento computacional entre estudiantes de secundaria, fomentando su interés en STEM (ciencias, tecnología, ingeniería y matemáticas) a través de una experiencia educativa inclusiva y práctica.  
 Busca mostrar a los estudiantes que aprender un lenguaje de programación no es tan difícil como podrían pensar y que tienen el potencial de seguir una carrera en STEM.
 """,
-    "Español": """
-El objetivo principal de PySchool es democratizar el acceso a la programación y el pensamiento computacional entre estudiantes de secundaria, fomentando su interés en STEM (ciencias, tecnología, ingeniería y matemáticas) a través de una experiencia educativa inclusiva y práctica. 
-Busca mostrar a los estudiantes que aprender un lenguaje de programación no es tan difícil como podrían pensar y que tienen el potencial de seguir una carrera en STEM.
-"""
 }
 
 results_dict = {
     "English": """
-Development of a replicable methodology for future events, allowing the initiative to scale to more locations and audiences. This includes a dedicated website where Python can be executed without requiring local installation.
-Successful implementation of workshops across multiple dates, reaching over 150 students from diverse backgrounds.
+Development of a replicable methodology for future events, allowing the initiative to scale to more locations and audiences.  
+This includes a dedicated website where Python can be executed without requiring local installation.  
+Successful implementation of workshops across multiple dates, reaching over 150 students from diverse backgrounds.  
 Positive impact on students’ perception of programming as an accessible and valuable skill. Survey to students was overwhelmingly positive, with a NPS score of 9.3/10 (would you recommend this event to other students?)
 """,
     "Español": """
-Desarrollo de una metodología replicable para futuros eventos, permitiendo que la iniciativa pueda escalar a más lugares y audiencias. Esto incluye un sitio web dedicado donde Python puede ser ejecutado sin requerir instalación local.
-Implementación exitosa de talleres en múltiples fechas, llegando a más de 150 estudiantes de diversas backgrounds.
-Impacto positivo en la percepción de los estudiantes sobre la programación como una habilidad accesible y valiosa. El cuestionario a los estudiantes fue muy positivo, con una puntuación NPS de 9.3/10 (¿recomendarías este evento a otros estudiantes?).
+Desarrollo de una metodología replicable para futuros eventos, permitiendo que la iniciativa pueda escalar a más lugares y audiencias.  
+Esto incluye un sitio web dedicado donde Python puede ser ejecutado sin requerir instalación local.  
+Implementación exitosa de talleres en múltiples fechas, llegando a más de 150 estudiantes de diversas backgrounds.  
+Impacto positivo en la percepción de los estudiantes sobre la programación como una habilidad accesible y valiosa. El cuestionario a los estudiantes fue muy positivo, con una puntuación NPS de 9.3/10 (¿recomendarías este evento a otros estudiantes?).  
 """
-}
-
-events_dict = {
-    "English": """
-""",
-    "Español": """
-""",
 }
 
 team_dict = {
     "English": """
 **Lead authors**: Curriculum and coding
-* Francisco Alfaro: [LinkedIn](https://www.linkedin.com/in/faam/) [GitHub](https://github.com/faam)
-* Sebastian Flores: [LinkedIn](https://www.linkedin.com/in/sebastiandres/) [GitHub](https://github.com/sebastiandres)
+* Francisco Alfaro: [LinkedIn](https://www.linkedin.com/in/faam/), [GitHub](https://github.com/faam)
+* Sebastian Flores: [LinkedIn](https://www.linkedin.com/in/sebastiandres/), [GitHub](https://github.com/sebastiandres)
 
 **Volunteers**: Delivery of content
-* Cristian López
-* Bastian Blandskron
-* Cristina Vergara
-* Liliana Garmendia
-* Valeska ??
-* Yileane ??
+* Bastian Blandskron:
+* Liliana Garmendia Campos: [LinkedIn](https://www.linkedin.com/in/liliana-garmendia-c/), [GitHub](https://github.com/LiliGC)
+* Valeska ??:
+* Yileane ??: 
+* Cristian Lopez: 
+* Cristina Vergara: 
+* María-Fernanda Villalobos: [LinkedIn](https://www.linkedin.com/in/marifervl/), [GitHub](https://github.com/marifervl)
 
 **DUOC UC Sede Valparaíso**: Backstage and logistics
 * Darwin Morales: Director of IT
@@ -161,16 +153,17 @@ team_dict = {
 """,
     "Español": """
 **Lead authors:** Curriculum y programación
-* Francisco Alfaro: [LinkedIn](https://www.linkedin.com/in/faam/) [GitHub](https://github.com/faam)
-* Sebastian Flores: [LinkedIn](https://www.linkedin.com/in/sebastiandres/) [GitHub](https://github.com/sebastiandres)
+* Francisco Alfaro: [LinkedIn](https://www.linkedin.com/in/faam/), [GitHub](https://github.com/faam)
+* Sebastian Flores: [LinkedIn](https://www.linkedin.com/in/sebastiandres/), [GitHub](https://github.com/sebastiandres)
 
 **Volunteers**: Entrega de contenidos
-* Cristian Lopez
-* Bastian Blandskron
-* Cristina Vergara
-* Liliana Garmendia
-* Valeska ??
-* Yileane ??
+* Bastian Blandskron:
+* Liliana Garmendia Campos: [LinkedIn](https://www.linkedin.com/in/liliana-garmendia-c/), [GitHub](https://github.com/LiliGC)
+* Valeska ??:
+* Yileane ??: 
+* Cristian Lopez: 
+* Cristina Vergara: 
+* María-Fernanda Villalobos: [LinkedIn](https://www.linkedin.com/in/marifervl/), [GitHub](https://github.com/marifervl)
 
 **DUOC UC Sede Valparaíso**: Apoyo tras bambalinas y logística
 * Darwin Morales: Director de Informática y Telecomunicaciones
@@ -179,19 +172,46 @@ team_dict = {
 }
 
 
-
-
 tech_stack_dict = {
-    "English": """ Quarto + pyodide
+    "English": """
+    We used Quarto with the pyodide extension.  
+    This allowed students to run Python without needing to install anything on their computer.  
+    Students can even continue learning Python at home after the event: the page is open to everyone!  
+    Creating the material is extremely easy: just write in rich markdown in Quarto (qmd) and then render it to html.  
 """,
-    "Español": """ Quarto + pyodide
+    "Español": """
+    Utilizamos quarto con la extensión de pyodide.  
+    Esto permitió que los estudiantes pudieran ejecutar Python sin necesidad de instalar nada en su computadora.  
+    Los estudiantes pueden incluso seguir aprendiendo Python en sus casas una vez que terminen el evento: ¡la pagina está abierta para todos!  
+    Crear el material es extremadamente sencillo: basta con escribir en markdown enriquecido de quarto (qmd) y luego renderizarlo a html.  
 """,
 }
 
 replicate_dict = {
-    "English": """ To replicate the initiative, you can follow the steps in the [repo](https://github.com/python-chile/pyschool2024/).
+    "English": """
+    There are many ways to replicate the initiative:
+
+    **Option 1**
+    You can use the [website](https://pyschool.cl/) directly.  
+    Gather volunteers to perform the workshop, and invite students.  
+    You can use github pages to host the website, or use your own hosting.
+
+    **Option 2**
+    Clone the [repo](https://github.com/python-chile/pyschool2024/), and edit the content to be relevant to your audience.  
+    Gather volunteers to perform the workshop, and invite students.  
+    You can use github pages to host the website, or use your own hosting.
 """,
-    "Español": """ Para replicar la iniciativa, puedes seguir los pasos en el [repo](https://github.com/python-chile/pyschool2024/).
+    "Español": """
+    Existen muchas maneras de replicar la iniciativa:
+    
+    **Opción 1** 
+    Puedes usar el [sitio web](https://pyschool.cl/) directamente.  
+    Reúne voluntarios para realizar el taller, y convoca a los estudiantes.  
+    
+    **Opción 2**
+    Clona el [repo](https://github.com/python-chile/pyschool2024/), y edita el contenido para que sea relevante para tu audiencia.  
+    Reúne voluntarios para realizar el taller, y convoca a los estudiantes.  
+    Puedes usar github pages para hostear el sitio web, o usar un hosting propio.
 """,
 }
 
@@ -235,10 +255,10 @@ content_dict = {
     "objective": objective_dict,
     "results": results_dict,
     "team": team_dict,
-    "acknowledgement": acknowledgement_dict,
     "tech_stack": tech_stack_dict,
     "replicate": replicate_dict,
     "photos": photos_dict,
+    "acknowledgement": acknowledgement_dict,
     "links": links_dict,
 }
 
