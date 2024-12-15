@@ -4,17 +4,17 @@ from data import content_dict, button_dict
 
 test_items = [
     dict(
-        title="PySchool",
+        title="",
         text="",
         img="carousel/pyschool_00.jpg",
     ),
     dict(
-        title="PySchool",
+        title="",
         text="",
         img="carousel/pyschool_01.jpg",
     ),
     dict(
-        title="PySchool",
+        title="",
         text="",
         img="carousel/pyschool_02.jpg",
     ),

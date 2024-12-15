@@ -7,9 +7,11 @@ from data import content_dict, button_dict
 from photo_carousel import carousel_dialog, test_items
 from streamlit_carousel import carousel
 
+# Setup
 st.set_page_config(page_title="PySchool", page_icon="images/pyschool.png")
 if "show_photos" not in st.session_state:
     st.session_state["show_photos"] = False
+st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">', unsafe_allow_html=True)
 
 # Select the language
 ic, tc = st.columns([1, 3])
@@ -33,7 +35,7 @@ def carousel_callback():
 @st.dialog(title="PySchool", width="large")
 def dynamic_dialog():
     st.subheader(st.session_state["title"])
-    st.markdown(st.session_state["content"])
+    st.markdown(st.session_state["content"], unsafe_allow_html=True)
 
 # Display the buttons
 button_properties = { "use_container_width": True, "type": "primary" }

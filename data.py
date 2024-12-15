@@ -1,4 +1,17 @@
 #-----------------------------------------------------------------------------#
+# Clickable social media buttons
+#-----------------------------------------------------------------------------#
+def link(fa_icon, url):
+    if fa_icon == "linkedin":
+        return f"[<i class='fa-brands fa-linkedin'></i>](https://www.linkedin.com/in/{url})"
+    elif fa_icon == "github":
+        return f"[<i class='fa-brands fa-github'></i>](https://github.com/{url})"
+    elif fa_icon == "website":
+        return f"[<i class='fa-solid fa-globe'></i>]({url})"
+    else:
+        return ""
+
+#-----------------------------------------------------------------------------#
 # Buttons dict
 #-----------------------------------------------------------------------------#
 
@@ -132,43 +145,44 @@ Impacto positivo en la percepción de los estudiantes sobre la programación com
 }
 
 team_dict = {
-    "English": """
+    "English": f"""
 **Lead authors**: Curriculum and coding
-* Francisco Alfaro: [LinkedIn](https://www.linkedin.com/in/faam/), [GitHub](https://github.com/faam)
-* Sebastian Flores: [LinkedIn](https://www.linkedin.com/in/sebastiandres/), [GitHub](https://github.com/sebastiandres)
+* Francisco Alfaro: {link("linkedin", "faam")}, {link("github", "fralfaro")}, {link("website", "https://fralfaro.github.io/portfolio/")}
+* Sebastian Flores: {link("linkedin", "sebastiandres")}, {link("github", "sebastiandres")}, {link("website", "https://sebastiandres.xyz")}
 
 **Volunteers**: Delivery of content
-* Bastian Blandskron:
-* Liliana Garmendia Campos: [LinkedIn](https://www.linkedin.com/in/liliana-garmendia-c/), [GitHub](https://github.com/LiliGC)
-* Valeska ??:
-* Yileane ??: 
-* Cristian Lopez: 
+* Yileanne Alviña: {link("linkedin", "yileanne")}
+* Bastian Blandskron: {link("linkedin", "blandskron")}
+* Valeska Canales: {link("linkedin", "vcanalesp")}
+* Liliana Garmendia Campos: {link("linkedin", "liliana-garmendia-c")}, {link("github", "LiliGC")}
+* Cristian Lopez: {link("linkedin", "cristianl0pez")}
 * Cristina Vergara: 
-* María-Fernanda Villalobos: [LinkedIn](https://www.linkedin.com/in/marifervl/), [GitHub](https://github.com/marifervl)
+* María-Fernanda Villalobos: {link("linkedin", "marifervl")}, {link("github", "marifervl")}
 
 **DUOC UC Sede Valparaíso**: Backstage and logistics
-* Darwin Morales: Director of IT
-* Patricia Tapia: Coordinator of CITT
-* Marcelo Figueroa: Coordinator of Processes
+* Darwin Morales: Director of IT {link("linkedin", "")}
+* Patricia Tapia: Coordinator of CITT {link("linkedin", "patriciatapiau")}
+* Marcelo Figueroa: Coordinator of Processes {link("linkedin", "marcelofigcas")}
 """,
     "Español": """
 **Lead authors:** Curriculum y programación
-* Francisco Alfaro: [LinkedIn](https://www.linkedin.com/in/faam/), [GitHub](https://github.com/faam)
-* Sebastian Flores: [LinkedIn](https://www.linkedin.com/in/sebastiandres/), [GitHub](https://github.com/sebastiandres)
+* Francisco Alfaro: {link("linkedin", "faam")}, {link("github", "fralfaro")}, {link("website", "https://fralfaro.github.io/portfolio/")}
+* Sebastian Flores: {link("linkedin", "sebastiandres")}, {link("github", "sebastiandres")}, {link("website", "https://sebastiandres.xyz")}
 
-**Volunteers**: Entrega de contenidos
-* Bastian Blandskron:
-* Liliana Garmendia Campos: [LinkedIn](https://www.linkedin.com/in/liliana-garmendia-c/), [GitHub](https://github.com/LiliGC)
-* Valeska ??:
-* Yileane ??: 
-* Cristian Lopez: 
+**Voluntarios**: Entrega de contenidos
+* Yileanne Alviña: {link("linkedin", "yileanne")}
+* Bastian Blandskron: {link("linkedin", "blandskron")}
+* Valeska Canales: {link("linkedin", "vcanalesp")}
+* Liliana Garmendia Campos: {link("linkedin", "liliana-garmendia-c")}, {link("github", "LiliGC")}
+* Cristian Lopez: {link("linkedin", "cristianl0pez")}
 * Cristina Vergara: 
-* María-Fernanda Villalobos: [LinkedIn](https://www.linkedin.com/in/marifervl/), [GitHub](https://github.com/marifervl)
+* María-Fernanda Villalobos: {link("linkedin", "marifervl")}, {link("github", "marifervl")}
 
 **DUOC UC Sede Valparaíso**: Apoyo tras bambalinas y logística
-* Darwin Morales: Director de Informática y Telecomunicaciones
-* Patricia Tapia: Coordinadora CITT
-* Marcelo Figueroa: Coordinadora de Procesos"""
+* Darwin Morales: Director de Informática y Telecomunicaciones {link("linkedin", "")}
+* Patricia Tapia: Coordinadora CITT {link("linkedin", "patriciatapiau")}
+* Marcelo Figueroa: Coordinador de Procesos {link("linkedin", "marcelofigcas")}
+""",
 }
 
 
