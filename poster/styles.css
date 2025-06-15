@@ -1,0 +1,25 @@
+.poster-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    align-items: start;
+  }
+  
+  .cell {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Optional: ensure full-screen poster feel */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @page {
+    size: A3 landscape;
+    margin: 1cm;
+  }
+  

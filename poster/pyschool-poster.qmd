@@ -1,36 +1,26 @@
 ---
 title: PySchool - Introducing highschool students to the World of Python
 format:
-  pdf:
-    width: 4960px # A3
-    height: 3508px # A3
-    #width: 100%
-    #height: 100%
-    menu: false
-    controls: false
-    transition: fade
-    auto-stretch: false
-    embed-resources: false
+  html:
     toc: false
-    center: true
-    slide-number: false
-    preview-links: false
-    theme:
-        - simple
+    theme: none
+    css: styles.css
+    page-layout: full
+    self-contained: true
+    embed-resources: true
+    html-math-method: katex
 ---
 
-**TLDR;** We used challenges to motivate highschoolers to learn Python, using a no-installation-required website powered with quarto + pyodide. They loved it!
+**TLDR;** We motivated highschoolers to learn Python, using a no-installation-required website powered with quarto + pyodide. They loved it!
 
 ::: {.columns}
-::: {.column width="30%" style="text-align: center; background-color: #f0f0f0;"}
-**Poster created by**: Sebastián Flores
-:::
-::: {.column width="30%" style="text-align: center; background-color: #f0f0f0;"}
-- **Content**: Francisco Alfaro, Sebastián Flores, Tony Rodríguez
+::: {.column width="50%" style="text-align: center; background-color: #f0f0f0;"}
+- **Poster**: Sebastián Flores
+- **Website**: Francisco Alfaro, Sebastián Flores & Tony Rodríguez
 - **Coordination**: Darwin Morales, Patricia Tapia & Marcelo Figueroa.
 - **Volunteers**: Bastián Blandskron, Cristina Verdugo, Cristian López, Liliana Garmendia, Valeska Canales, Yialenne Alviña & María Fernanda Villalobos.
 :::
-::: {.column width="30%" style="text-align: center; background-color: #f0f0f0;"}
+::: {.column width="50%" style="text-align: center; background-color: #f0f0f0;"}
 ## Help us!
 - **Share**: Let others know about PySchool!
 - **Give us Feedback**: Let us know what might improve PySchool! 
@@ -81,33 +71,33 @@ Volunteer if you want to help!
 ::: {.columns}
 ::: {.column width="10%"}
 Want to try it?  
-![QR Code](./images/qr_pyschool_site.png){width="50%"}
+![QR Code](./images/qr.png){width="100%"}
 :::
 ::: {.column width="10%"}
 Want the poster code?  
-![QR Code](./images/qr_pyschool_repo.png){width="50%"}
+![QR Code](./images/qr.png){width="100%"}
 :::
 ::: {.column width="10%"}
 Want the poster pdf?
-![QR Code](./images/qr_pdf.png){width="50%"}
+![QR Code](./images/qr.png){width="100%"}
 :::
 ::: {.column width="10%"}
 Want to stay in touch?  
-![QR Code](./images/qr_sebastiandres.png){width="50%"}
+![QR Code](./images/qr.png){width="100%"}
 :::
 ::: {.column width="10%"}
 .
 :::
 ::: {.column width="10%"}
-![Python Chile](./images/pythonchile.png){width="50%"}
+![Python Chile](./images/pythonchile.png){width="100%"}
 :::
 ::: {.column width="10%"}
-![DUOC Valparaíso](./images/duoc_valparaiso.png){width="50%"}
+![DUOC Valparaíso](./images/duoc_valparaiso.png){width="100%"}
 :::
 ::: {.column width="10%"}
-![PSF](./images/PSF.png){width="50%"}
+![PSF](./images/PSF.png){width="100%"}
 :::
 ::: {.column width="10%"}
-![Robot Cafe Galletas](./images/cafe_robots_galletas.png){width="50%"}
+![Robot Cafe Galletas](./images/cafe_robots_galletas.png){width="100%"}
 :::
 :::

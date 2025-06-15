@@ -1,0 +1,62 @@
+---
+title: "My Poster"
+format:
+  html:
+    theme: cosmo
+    page-layout: full
+    css: styles.css
+    self-contained: true
+---
+
+::: {.poster-grid}
+
+::: {.cell col-2}
+
+### Introduction
+
+This is the left column (2fr wide).  
+Here goes the introduction and context.
+
+### Column 2
+
+- Methods
+- Results
+
+:::
+
+::: {.cell col-3}
+
+### Methodology
+
+This middle column (3fr) is for methods, visuals, and results.  
+You can include plots here:
+
+```python
+#| echo: false
+import matplotlib.pyplot as plt
+plt.plot([1, 2, 3], [3, 2, 5])
+plt.title("Sample Plot")
+plt.show()
+```
+
+### Column 2
+
+- Methods
+- Results
+
+### Column 3
+
+- Methods
+- Results
+
+:::
+
+::: {.cell col-1}
+
+### Conclusions
+
+The final, narrow column. Great for references or QR codes.
+
+:::
+
+:::

@@ -1,3 +1,18 @@
+# DESIGN:
+## PYSCHOOL
+--white: #FFFFFFff;
+--gold: #FCD119ff;
+--celestial-blue: #2397E2ff;
+--pistachio: #88D37Cff;
+--black: #010408ff;
+
+## EUROPYTHON
+--oxford-blue-2: #151F38ff;
+--glaucous: #7A7EBBff;
+--periwinkle: #B9C4E4ff;
+--antique-white: #F5E7D7ff;
+
+
 # PYSCHOOL TEXTS
 
 Definitions: Landscape (not Portrait)
