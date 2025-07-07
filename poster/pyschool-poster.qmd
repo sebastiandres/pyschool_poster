@@ -11,7 +11,7 @@ format:
     html-math-method: katex
 ---
 
-**TLDR;** We motivated highschoolers to learn Python, using a no-installation-required website powered with quarto + pyodide. They loved it!
+**TLDR;** We motivated highschoolers to learn Python, using a no-installation-required website powered with quarto+pyodide. They loved it!
 
 ::: {.columns}
 ::: {.column width="50%" style="text-align: center; background-color: #f0f0f0;"}
@@ -33,12 +33,12 @@ format:
 ::: {.column width="33%"}
 ## The past
 
-- Motivation: events are organized by Python Chile (PyDay and PyCon) were aimed towards grownups. We **dreamed of** an event targetting highschool students.
-- Philosophy: We know we can't teach Python in a day, but we can show how simple and fun coding in Python can be, and motivate them to learn Python.
-- How: quarto+pyodide allowed us to code a simple website in Spanish (pyschool.cl) that does not requires users to install Python! It's simpler to use than jupyter notebooks.
-- Activities: Intro to Python (1h) and Intro to Data Analysis (1h).
-- Events: # X students, on 3 events done in Valparaíso, Chile.
-- Feedback:  We had 9.3/10 stars on anonymous surveys. 
+Motivation: events are organized by Python Chile (PyDay and PyCon) were aimed towards grownups. We **dreamed of** an event targetting highschool students.
+Philosophy: We know we can't teach Python in a day, but we can show how simple and fun coding in Python can be, and motivate them to learn Python.
+How: quarto+pyodide allowed us to code a simple website in Spanish (pyschool.cl) that does not requires users to install Python! It's simpler to use than jupyter notebooks.
+Activities: Intro to Python (1h) and Intro to Data Analysis (1h).
+Events: # X students, on 3 events done in Valparaíso, Chile.
+Feedback:  We had 9.3/10 stars on anonymous surveys. 
 
 # Photos
 1. Workshop at DUOC 1 (didn't work as setup)
